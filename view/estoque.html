@@ -1,0 +1,53 @@
+<div id="estoque-view-form" class="col-lg-12">
+	<div class="panel panel-default">
+		<div id="estoque-header-form" class="panel-heading">
+			Entrada de Material
+		</div>
+		<div class="panel-body">
+
+            <div class="form-group">
+            	<label>Data</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input id="estoque-fld-data" type="text" class="form-control" data-typecontent="sql-datetime" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+			<div class="form-group">
+
+				<label>Produto</label>
+				<div class="dropdown">
+					<div class="bootstrap-tagsinput" style="width: 100%;">
+						<span id="estoque-fld-produtotag"></span>
+						<input id="estoque-fld-produtonome" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" placeholder="" type="text" style="width: 100%;">
+						<ul id="estoque-fld-produto-ul" class="dropdown-menu" aria-labelledby="estoque-fld-produtonome"> </ul>
+					</div>
+				</div>
+				<input type="hidden" id="estoque-fld-produto" data-typecontent="extend-code" data-typecontent-val="false">
+			</div>
+
+			<div class="form-group">
+				<label>Categoria</label>
+				<input class="form-control" id="estoque-fld-categorianome" readonly="readonly">
+				<input type="hidden" id="estoque-fld-categoria">
+			</div>
+
+			<div class="form-group">
+				<label id="estoque-fld-label1">Fornecedor</label>
+				<select class="form-control" id="estoque-fld-select1"></select>
+			</div>
+			<div class="form-group">
+				<label>Quantidade</label>
+				<input class="form-control" id="estoque-fld-quantidade" data-typecontent="integer">
+			</div>
+			<div class="form-group">
+				<label>Obs</label>
+				<input class="form-control" id="estoque-fld-obs">
+			</div>
+			<button id="estoque-btn-submit" class="btn btn-default">Salvar</button>
+
+		</div>
+	</div>
+</div>
