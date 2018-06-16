@@ -21,18 +21,18 @@ session_destroy();
 include_once('useful.php');
 
 //bootstrap core
-includeCss('vendor/bootstrap/css/bootstrap.min.css');
+includeCss('lib/bootstrap/css/bootstrap.min.css');
 //MetisMenu
-includeCss('vendor/metisMenu/metisMenu.min.css');
+includeCss('lib/metisMenu/metisMenu.min.css');
 //sb-admin 2
 includeCss('dist/css/sb-admin-2.css');
 //Font Awesome
-includeCss('vendor/font-awesome/css/font-awesome.min.css');
+includeCss('lib/font-awesome/css/font-awesome.min.css');
 
 //jquery
-includeJs('vendor/jquery/jquery.min.js', $cached);
+includeJs('lib/jquery/jquery.min.js', $cached);
 //Bootbox
-includeJs('vendor/bootbox/bootbox.min.js', $cached);
+includeJs('lib/bootbox/bootbox.min.js', $cached);
 
 ?>
 
@@ -102,9 +102,9 @@ includeJs('vendor/bootbox/bootbox.min.js', $cached);
 <?php
 
 //bootstrap core
-includeJs('vendor/bootstrap/js/bootstrap.min.js', $cached);
+includeJs('lib/bootstrap/js/bootstrap.min.js', $cached);
 //metis menu
-includeJs('vendor/metisMenu/metisMenu.min.js', $cached);
+includeJs('lib/metisMenu/metisMenu.min.js', $cached);
 //sb-admin 2
 includeJs('dist/js/sb-admin-2.js', $cached);
 

@@ -19,26 +19,26 @@
     include_once('useful.php');
 
     //bootstrap core
-    includeCss('vendor/bootstrap/css/bootstrap.min.css');
+    includeCss('lib/bootstrap/css/bootstrap.min.css');
     //MetisMenu
-    includeCss('vendor/metisMenu/metisMenu.min.css');
+    includeCss('lib/metisMenu/metisMenu.min.css');
     //sb-admin 2
     includeCss('dist/css/sb-admin-2.css');
     //Font Awesome
-    includeCss('vendor/font-awesome/css/font-awesome.min.css');
+    includeCss('lib/font-awesome/css/font-awesome.min.css');
     //bootstrap datetimepicker
-    includeCss('vendor/bs_datetimepicker/css/bootstrap-datetimepicker.min.css');
+    includeCss('lib/bs_datetimepicker/css/bootstrap-datetimepicker.min.css');
     //bootstrap tagsinput
-    includeCss('vendor/bs_tagsinput/bootstrap-tagsinput.css');
+    includeCss('lib/bs_tagsinput/bootstrap-tagsinput.css');
 
     //jquery
-    includeJs('vendor/jquery/jquery.min.js', $cached);
+    includeJs('lib/jquery/jquery.min.js', $cached);
     //Moment
-    includeJs('vendor/moment/moment-with-locales.js', $cached);
+    includeJs('lib/moment/moment-with-locales.js', $cached);
     //bootstrap datetime picker
-    includeJs('vendor/bs_datetimepicker/js/bootstrap-datetimepicker.min.js', $cached);
+    includeJs('lib/bs_datetimepicker/js/bootstrap-datetimepicker.min.js', $cached);
     //Bootbox
-    includeJs('vendor/bootbox/bootbox.min.js');
+    includeJs('lib/bootbox/bootbox.min.js');
 
     ?>
 </head>
@@ -214,7 +214,8 @@
                             title: "Sobre",
                             message: "Desenvolvido por:<br><br>"+
                             "Ailton B.S, J<br><br>"+
-                            "<a target='_blank' href='https://ailtonbsj.wordpress.com'>https://ailtonbsj.wordpress.com</a>",
+                            "<a target='_blank' href='https://ailtonbsj.wordpress.com'>https://ailtonbsj.wordpress.com</a><br><br>"+
+                            "<a target='_blank' href='http://ailtonbsj.herokuapp.com'>http://ailtonbsj.herokuapp.com</a>",
                             callback: function(){}
                         });
                     });
@@ -226,9 +227,9 @@
 	</div><!--/#wrapper-->
     <?php
     //bootstrap core
-    includeJs('vendor/bootstrap/js/bootstrap.min.js', $cached);
+    includeJs('lib/bootstrap/js/bootstrap.min.js', $cached);
     //metis menu
-    includeJs('vendor/metisMenu/metisMenu.min.js', $cached);
+    includeJs('lib/metisMenu/metisMenu.min.js', $cached);
     //sb-admin 2
     includeJs('dist/js/sb-admin-2.js', $cached);
 
