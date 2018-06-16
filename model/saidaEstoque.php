@@ -25,7 +25,7 @@ class SaidaEstoqueStorage extends EstoqueStorage {
 		if(($atual-$quantidade) >= 0){
 			$this->updateQuantidadeProdutoById($id, $atual-$quantidade);
 			parent::insert($array);
-		} else echo 'error';
+		} else echo 'error: nao existe no estoque essa quantidade';
 	}
 
 	public function delete($id){

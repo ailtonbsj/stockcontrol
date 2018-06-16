@@ -14,9 +14,14 @@ class ProdutoStorage extends Storage {
 	}
 
 	public function selectByKey($key, $lim = 0){
-		$sql = "SELECT * FROM {$this->table} WHERE nome LIKE '%$key%' ORDER BY nome ASC";
-		if($lim > 0) $sql .= "  LIMIT 0,$lim";
+		$sql = "SELECT * FROM {$this->table} WHERE lower(nome) LIKE lower('%$key%') ORDER BY nome ASC";
+		if ($this->dbconf['type'] == 'pg') {
+			if($lim > 0) $sql .= "  LIMIT $lim OFFSET 0";
+		} else {
+			if($lim > 0) $sql .= "  LIMIT 0,$lim";
+		}
 		$stm = $this->conn->prepare($sql);
+		//echo $stm->debugDumpParams();
 		$stm->execute();
 
 		$listagem = array();

@@ -35,7 +35,7 @@ class EntradaEstoqueStorage extends EstoqueStorage {
 		if(($atual-$quantidade) >= 0){
 			$this->updateQuantidadeProdutoById($idProd, $atual-$quantidade);
 			parent::delete($id);	
-		} else echo 'error';
+		} else echo 'error: ja houve saida de produto';
 	}
 
 }

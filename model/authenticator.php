@@ -16,7 +16,7 @@ class Authenticator extends Storage {
 	public function auth(){
 		global $postUser, $postPass;
 
-		$sql = "SELECT * FROM {$this->table} WHERE user = :user AND pass = :pass";
+		$sql = "SELECT * FROM {$this->table} WHERE {$this->table}.user = :user AND {$this->table}.pass = :pass";
 		$stm = $this->conn->prepare($sql);
 		$stm->execute(array('user' => $postUser, 'pass' => $postPass));
 		$row = $stm->fetchObject();
@@ -28,12 +28,12 @@ class Authenticator extends Storage {
 			} else {
 				$_SESSION = array();
 				session_destroy();
-				echo "error";
+				echo "error de login";
 			}
 		} else {
 			$_SESSION = array();
 			session_destroy();
-			echo "error";
+			echo "error de consulta";
 		}
 	}
 
