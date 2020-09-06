@@ -1,0 +1,11 @@
+#!/bin/bash
+
+systemctl stop apache2.service
+/opt/lampp/lampp startmysql
+/opt/lampp/lampp startapache
+
+if [ ! -f /usr/share/orkidea-stockcontrol/deploy ]; then
+    touch /usr/share/orkidea-stockcontrol/deploy
+    sleep 4
+    /opt/lampp/bin/mysql -u root < /usr/share/orkidea-stockcontrol/mydb.sql
+fi

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>com.github.ailtonbsj.orkidea-stockcontrol.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Apache-2.0+</project_license>
+  <name>Orkidea StockControl</name>
+  <name xml:lang="pt_BR">Controle de Estoque Orkidea</name>
+  <summary>Web system for stock control</summary>
+  <summary xml:lang="pt_BR">Sistema web para controle de estoque</summary>
+  <description>
+    <p>System created in PHP for stock control</p>
+    <p xml:lang="pt_BR">Sistema de controle de estoque em PHP</p>
+  </description>
+  <url type="homepage">https://github.com/ailtonbsj/stockcontrol/</url>
+  <url type="bugtracker">https://github.com/ailtonbsj/stockcontrol/issues</url>
+  <url type="help">https://github.com/ailtonbsj/stockcontrol/issues</url>
+  <url type="donation">https://github.com/ailtonbsj/stockcontrol/issues</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Screenshot of app</caption>
+      <caption xml:lang="pt_BR">Tela do App</caption>
+      <image>https://ailtonbsj.github.io/portfolio/projects/stockcontrol/0.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>orkidea</project_group>
+  <provides>
+    <binary>orkidea-stockcontrol</binary>
+  </provides>
+  <releases>
+    <release version="1.0.0" date="2020-09-06"/>
+  </releases>
+  <content_rating type="oars-1.0" />
+</component>
+

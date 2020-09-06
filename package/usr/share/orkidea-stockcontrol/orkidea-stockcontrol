@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pkexec stockcontrol-super
+sleep 1
+xdg-open http://localhost/orkidea-stockcontrol/ &

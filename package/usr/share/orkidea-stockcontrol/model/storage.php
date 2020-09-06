@@ -25,8 +25,8 @@ class Storage {
 
 	private function conectDb() {
 		try {
-			//Using postgree
-			$this->dbconf = $this->pgconf;
+			//Using mysql
+			$this->dbconf = $this->myconf;
 
 			if ($this->dbconf['type'] == 'pg') {
 				$db = "pgsql:dbname={$this->dbconf['name']};host={$this->dbconf['host']}";

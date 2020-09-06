@@ -1,0 +1,13 @@
+Package: orkidea-stockcontrol
+Version: 1.0.0
+Installed-Size: 2879
+Maintainer: ailtonbsj <ailtonbsj@gmail.com>
+Section: utils
+Architecture: all
+Priority: optional
+Depends: xampp (>=7.4.8)
+Homepage: https://github.com/ailtonbsj/stockcontrol/
+Description: Sistema web para controle de estoque
+ Sistema de controle de estoque em PHP
+ .
+ System created in PHP for stock control
