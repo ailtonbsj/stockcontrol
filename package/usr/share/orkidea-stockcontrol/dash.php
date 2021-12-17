@@ -213,9 +213,8 @@
                         bootbox.alert({
                             title: "Sobre",
                             message: "Desenvolvido por:<br><br>"+
-                            "Ailton B.S, J<br><br>"+
-                            "<a target='_blank' href='https://ailtonbsj.wordpress.com'>https://ailtonbsj.wordpress.com</a><br><br>"+
-                            "<a target='_blank' href='http://ailtonbsj.herokuapp.com'>http://ailtonbsj.herokuapp.com</a>",
+                            "José Ailton<br><br>"+
+                            "<a target='_blank' href='https://ailtonbsj.github.io'>https://ailtonbsj.github.io</a><br><br>",
                             callback: function(){}
                         });
                     });

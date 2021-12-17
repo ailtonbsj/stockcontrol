@@ -1,5 +1,8 @@
 version: '3.8'
 
+volumes:
+  stockctlVol:
+
 services:
   db:
     container_name: stockctl-db1
@@ -9,6 +12,8 @@ services:
     build:
       context: .
       dockerfile: db/Dockerfile
+    volumes:
+      - stockctlVol:/var/lib/mysql
 
   app:
     container_name: stockctl-app1
@@ -20,9 +25,13 @@ services:
         - DBPASS=pass
     ports:
       - 80:80
+    depends_on:
+      - db
 
   adminer:
     container_name: adminer1
     image: adminer
     ports:
       - 8080:8080
+    depends_on:
+      - db
