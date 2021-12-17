@@ -1,6 +1,16 @@
 # Orkidea StockControl 1.0 Beta
 
-Sistema para Controle de Estoque
+Sistema simples para Controle de Estoque
+
+## Como instalar com Docker
+
+Para a instalação usando docker você precisará do `docker-compose`. Execute o comando abaixo na raiz do projeto:
+
+```bash
+sudo docker-compose up -d --build
+```
+
+Espere alguns minutos até o deploy automático finalizar.
 
 ## Como instalar no Ubuntu 20.04 ou superior
 
