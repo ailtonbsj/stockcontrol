@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: stockctl-db1
+    image: stockctl-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=pass
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+
+  app:
+    container_name: stockctl-app1
+    image: stockctl-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - DBPASS=pass
+    ports:
+      - 80:80
+
+  adminer:
+    container_name: adminer1
+    image: adminer
+    ports:
+      - 8080:8080
